@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/css/style.css">
   
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <nav class="container">
-    <h1 id="id-advice" class="id-advice">Advice #</h1>
-    <p id="">Advice text</p>
-    <img src="src/images/pattern-divider-desktop.svg" alt="">
-    <button>
-      <img src="src/images/icon-dice.svg" alt="">
+  <main class="container">
+    <h2 class="id-advice">Advice #</h2>
+    <p class="advice-description">Advice text</p>
+    <picture>
+      <source media="(min-width: 768px)" srcset="./src/images/pattern-divider-mobile.svg">
+      <img src="src/images/pattern-divider-desktop.svg" alt="pattern-divider">
+    </picture>
+
+    <button class="btn-advice">
+      <img src="src/images/icon-dice.svg" alt="Dice icon">
     </button>
-  </nav>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Lucas Augusto</a>.
