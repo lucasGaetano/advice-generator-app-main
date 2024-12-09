@@ -1,27 +1,69 @@
 html {
-    background-color: hsl(217, 19%, 24%);
+    background-color: hsl(218, 23%, 16%);
 }
 
 body {
+    
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
+    background-color: hsl(217, 19%, 24%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 1px solid white;
+    max-width: 450px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.container .id-advice {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.container .advice-description {
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    padding: 23px;
+}
+
+.container picture img {
+    width: 100%;
+}
+
+.btn-advice {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    transform: translateY(85%);
+}
+
+.btn-advice:hover{
+    cursor: pointer;
+    color: #53FFAB;
+    box-shadow: 0 5px 15px hsl(150, 100%, 66%);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
